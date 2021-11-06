@@ -31880,6 +31880,20 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/*COLORS*/
+
+.bg-banner{
+  background-color:#100514;
+}
+
+.bg-btn-purple{
+  background-color:#8C30F5;
+}
+
+.bg-font-main{
+  color:#ECD7F4;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
