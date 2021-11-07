@@ -13,7 +13,7 @@
 
 @layer base{
     h2{
-        @apply font-becka-sans text-6xl;
+        @apply font-becka-sans;
     }
 }
 
