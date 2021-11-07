@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+:root{
+    --becka-purple-darkest : #100514;
+    --becka-neutral : #E7DFDD;
+    --becka-purple-dark: #1A0821;
+    --becka-purple-accent : #8C30F5;
+    --becka-purple-light : #ECD7F4;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    h2{
+        @apply font-becka-sans text-6xl;
+    }
+}
 
 @layer utilities {
     /*COLORS*/
