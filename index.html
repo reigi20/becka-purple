@@ -217,7 +217,7 @@
         <!-- Navegation bar -->
         <nav class="self-center">
             <!-- Links-->
-            <ul class="flex flex-row gap-8">
+            <ul class="flex flex-col flex-1 sm:flex-row gap-2 sm:gap-5 mx-5">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Galeria</a></li>
                 <li><a href="#">Lo que hago</a></li> 
@@ -229,9 +229,13 @@
         </nav>  
         <!-- End Navegation bar -->
 
-        <section class="flex flex-row justify-between mx-24 mt-7 py-6 border-t-2 ">
+        <section class="flex flex-row justify-between mx-10 md:mx-24 mt-7 py-6 border-t-2 text-xs
+        gap-1">
             <h4>&copy; Becka Purple. Todos los derechos reservados</h4>
-            <h4>Instagram Facebook</h4>
+            <div class="flex flex-row gap-3">
+                <img class="w-4" src="assets/iconos/instagram.svg" alt="Icono de instagram">
+                <img class="w-4" src="assets/iconos/facebook.svg" alt="Icono de Facebook">
+            </div>      
         </section>
         
     </footer>
