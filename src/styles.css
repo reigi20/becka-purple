@@ -22,12 +22,16 @@
     .bg-banner{
         background-color:#100514;
     }
-
+    
     .bg-btn-purple{
         background-color:#8C30F5;
     }
 
     .bg-font-main{
         color:#ECD7F4;
+    }
+
+    .bg-logo{
+        background-color: #E25FEB;
     }
 }

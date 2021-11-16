@@ -10,28 +10,39 @@
     <link rel="stylesheet" href="assets/vendors/swiper-bundle.min.css">
     <!-- custom css -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Hamburguer button js -->
+    <script type="text/javascript" src="src/hamburguer.js"></script>
 </head>
 <body class= 'bg-becka-purple-darkest'>
     <div class="xl:container  mx-auto bg-gray-500 ">
         <!-- HEADER -->
         <header>
             <!-- Navegation bar -->
-            <nav class="flex flex-row items-center bg-black">
-                <!-- LOGO -->
-                <div class="py-1 ml-11">
-                    <img class="w-36" src="assets/img/logo.jpeg" alt="Logo Becka Purple">
-                </div>
-                <!-- Links big screens-->
-                <ul class="hidden sm:flex flex-1 justify-end items-center gap-8 mr-11 text-white">
-                    <li><a href="#">Sobre mi</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Contacto</a></li> 
-                </ul>
-                <!-- Hamburguer small screens -->
-                <div class="ml-auto mr-5 sm:hidden bg-white w-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
+            <nav class="bg-black">
+                <section class="flex flex-row items-center">
+                    <!-- LOGO -->
+                    <div class="py-1 ml-11">
+                        <img class="w-36" src="assets/img/logo.jpeg" alt="Logo Becka Purple">
+                    </div>
+                    <!-- Links big screens-->
+                    <ul class="hidden sm:flex flex-1 justify-end items-center gap-8 mr-11 text-white">
+                        <li><a href="#">Sobre mi</a></li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#">Contacto</a></li> 
+                    </ul>
+                    <!-- Hamburguer small screens -->
+                    <button class="ml-auto mr-5 sm:hidden bg-logo w-10 mobile-menu-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </section>
+                
+                <!-- Mobile Menu -->
+                <div class="flex flex-col text-white items-center hidden sm:hidden mobile-menu">
+                    <a href="#">Sobre mi</a>
+                    <a href="#">Galeria</a>
+                    <a href="#">Contacto</a> 
                 </div>
             </nav>  
             <!-- End Navegation bar -->

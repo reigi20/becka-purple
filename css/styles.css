@@ -32667,6 +32667,10 @@ h2{
   color:#ECD7F4;
 }
 
+.bg-logo{
+  background-color: #E25FEB;
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width : 100%;
