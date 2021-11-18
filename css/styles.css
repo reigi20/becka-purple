@@ -32667,6 +32667,10 @@ h2{
   color:#ECD7F4;
 }
 
+.bg-logo{
+  background-color: #E25FEB;
+}
+
 .swiper-3d .swiper-slide-shadow-right,
 .swiper-3d .swiper-slide-shadow-left{
   background-image: none;
@@ -192606,3 +192610,5 @@ h2{
     transition-timing-function : cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
+    

@@ -10,34 +10,45 @@
     <link rel="stylesheet" href="assets/vendors/swiper-bundle.min.css">
     <!-- custom css -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Hamburguer button js -->
+    <script type="text/javascript" src="src/hamburguer.js"></script>
 </head>
 <body class= 'bg-becka-purple-darkest'>
     <div class="xl:container  mx-auto bg-gray-500 ">
         <!-- HEADER -->
         <header>
             <!-- Navegation bar -->
-            <nav class="flex flex-row items-center bg-black">
-                <!-- LOGO -->
-                <div class="py-1 ml-11">
-                    <img class="w-36" src="assets/img/logo.jpeg" alt="Logo Becka Purple">
-                </div>
-                <!-- Links big screens-->
-                <ul class="hidden sm:flex flex-1 justify-end items-center gap-8 mr-11 text-white">
-                    <li><a href="#">Sobre mi</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Contacto</a></li> 
-                </ul>
-                <!-- Hamburguer small screens -->
-                <div class="ml-auto mr-5 sm:hidden bg-white w-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
+            <nav class="bg-black">
+                <section class="flex flex-row items-center">
+                    <!-- LOGO -->
+                    <div class="py-1 ml-11">
+                        <img class="w-36" src="assets/img/logo.jpeg" alt="Logo Becka Purple">
+                    </div>
+                    <!-- Links big screens-->
+                    <ul class="hidden sm:flex flex-1 justify-end items-center gap-8 mr-11 text-white">
+                        <li><a href="#">Sobre mi</a></li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#">Contacto</a></li> 
+                    </ul>
+                    <!-- Hamburguer small screens -->
+                    <button class="ml-auto mr-5 sm:hidden bg-logo w-10 mobile-menu-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </section>
+                
+                <!-- Mobile Menu -->
+                <div class="flex flex-col items-center sm:hidden mobile-menu bg-becka-purple-light text-gray-700">
+                    <a href="#">Sobre mi</a>
+                    <a href="#">Galeria</a>
+                    <a href="#">Contacto</a> 
                 </div>
             </nav>  
             <!-- End Navegation bar -->
             
             <!-- Banner -->
-            <section class="flex flex-col-reverse sm:flex-row items-center bg-banner sm:h-full pt-6">
+            <section class="flex flex-col-reverse sm:flex-row items-center bg-banner sm:h-full pt-8">
                 
                 
                 <div class="flex flex-col flex-1 content-center sm:ml-16 text-center sm:text-left text-3xl sm:text-4xl md:text-7xl leading-snug bg-font-main">
@@ -124,7 +135,7 @@
             </section>
 
             <!-- Feature 4 -->
-            <section class="flex flex-col md:flex-row-reverse md:justify-start items-center bg-becka-purple-dark bg-font-main md:px-20 pt-5">
+            <section class="flex flex-col md:flex-row-reverse md:justify-start items-center bg-becka-purple-dark bg-font-main md:px-20 py-5">
                 <img class="w-8/12 md:w-full" src="assets/img/bocetos-vestidos.png" alt="Boceto vestido">
                 <div class="md:pl-10 p-4">
                     <h3 class="text-2xl text-center">Vestidos</h3>
@@ -206,5 +217,39 @@
 
     <!-- script js -->
     <script src="/src/script.js"></script>
+
+    <!-- Footer -->
+    <footer class="flex flex-col bg-black text-white">
+        <!-- LOGO -->
+        <div class="py-10 self-center">
+            <img class="w-28" src="assets/img/logo.jpeg" alt="Logo Becka Purple">
+        </div>
+
+        <!-- Navegation bar -->
+        <nav class="self-center">
+            <!-- Links-->
+            <ul class="flex flex-col flex-1 sm:flex-row gap-2 sm:gap-5 mx-5">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Lo que hago</a></li> 
+                <li><a href="#">Trabajos recientes</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Politica de privacidad</a></li> 
+                <li><a href="#">Aviso legal</a></li> 
+            </ul>
+        </nav>  
+        <!-- End Navegation bar -->
+
+        <section class="flex flex-row justify-between mx-10 md:mx-24 mt-7 py-6 border-t-2 text-xs
+        gap-1">
+            <h4>&copy; Becka Purple. Todos los derechos reservados</h4>
+            <div class="flex flex-row gap-3">
+                <img class="w-4" src="assets/iconos/instagram.svg" alt="Icono de instagram">
+                <img class="w-4" src="assets/iconos/facebook.svg" alt="Icono de Facebook">
+            </div>      
+        </section>
+        
+    </footer>
+
 </body>
 </html>
