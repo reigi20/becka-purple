@@ -32667,6 +32667,11 @@ h2{
   color:#ECD7F4;
 }
 
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-left{
+  background-image: none;
+};
+
 @media (min-width: 640px){
   .sm\:container{
     width : 100%;
