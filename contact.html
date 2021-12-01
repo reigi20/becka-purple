@@ -55,25 +55,29 @@
                     <img src="assets/img/image-grid.png" alt="Imagen del formulario contacto">
                 </div>
                 
-                <div class="flex-grow p-10">
+                <div class="flex-grow sm:p-10">
 
-                    <div class="p-10">
+                    <div class="p-5">
                         <h1 class="bg-font-main text-center text-5xl mb-10">Contáctame</h1>
                         <form action="" method="post">
                             <div class="mb-4">
                                 <label class="block" for="username">Nombre</label>
-                                <input class="shadow appearance-none border rounded w-full py-2 px-3  bg-transparent leading-tight focus:outline-none focus:shadow-outline" type="text">
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3  bg-transparent leading-tight focus:outline-none focus:shadow-outline" type="text" required>
                             </div>
 
                             <div class="mb-4">
                                 <label class="block" for="email">Correo Electrónico</label>
-                                <input class="shadow appearance-none border rounded w-full py-2 px-3 bg-transparent leading-tight focus:outline-none focus:shadow-outline" type="email">
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 bg-transparent leading-tight focus:outline-none focus:shadow-outline" type="email" required>
                             </div>
 
                             <div class="mb-4">
                                 <label class="block" for="mensaje">Tu mensaje</label>
-                                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 bg-transparent leading-tight focus:outline-none focus:shadow-outline resize-none" name="mensaje" cols="30" rows="10"> 
+                                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 bg-transparent leading-tight focus:outline-none focus:shadow-outline resize-none" name="mensaje" cols="30" rows="10" required> 
                                 </textarea>
+                            </div>
+
+                            <div class="mb-4">
+                                <input type="checkbox" id="consent_box" required> <label for="consent_box">Acepto las condiciones de uso del servicio y la política de privacidad.</label>
                             </div>
 
                             <input class="bg-btn-purple hover:bg-purple-900 text-white p-2 cursor-pointer" type="submit" value="Enviar">
