@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Becka Purple</title>
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="assets/vendors/swiper-bundle.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Hamburguer button js -->
+    <script type="text/javascript" src="src/hamburguer.js"></script>
+</head>
+<body class= 'bg-becka-purple-darkest'>
+    <div class="xl:container mx-auto">
+        <!-- HEADER -->
+        <header>
+            <!-- Navegation bar -->
+            <nav class="bg-black">
+                <section class="flex flex-row items-center">
+                    <!-- LOGO -->
+                    <div class="py-1 ml-11">
+                        <img class="w-36" src="assets/img/logo.jpeg" alt="Logo Becka Purple">
+                    </div>
+                    <!-- Links big screens-->
+                    <ul class="hidden sm:flex flex-1 justify-end items-center gap-8 mr-11 text-white">
+                        <li><a href="#">Sobre mi</a></li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#">Contacto</a></li> 
+                    </ul>
+                    <!-- Hamburguer small screens -->
+                    <button class="ml-auto mr-5 sm:hidden bg-logo w-10 mobile-menu-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </section>
+                
+                <!-- Mobile Menu -->
+                <div class="flex flex-col items-center sm:hidden mobile-menu bg-becka-purple-light text-gray-700">
+                    <a href="#">Sobre mi</a>
+                    <a href="#">Galeria</a>
+                    <a href="#">Contacto</a> 
+                </div>
+            </nav>  
+            <!-- End Navegation bar -->
+        </header>
+
+        <!-- Contact form -->
+        <main>
+            <section class="flex flex-row flex-wrap text-white">
+                <div>
+                    <img src="assets/img/image-grid.png" alt="Imagen del formulario contacto">
+                </div>
+                
+                <div class="flex-grow p-10">
+
+                    <div class="p-10">
+                        <h1 class="bg-font-main text-center text-5xl mb-10">Contáctame</h1>
+                        <form action="" method="post">
+                            <div class="mb-4">
+                                <label class="block" for="username">Nombre</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3  bg-transparent leading-tight focus:outline-none focus:shadow-outline" type="text">
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="block" for="email">Correo Electrónico</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 bg-transparent leading-tight focus:outline-none focus:shadow-outline" type="email">
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="block" for="mensaje">Tu mensaje</label>
+                                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 bg-transparent leading-tight focus:outline-none focus:shadow-outline resize-none" name="mensaje" cols="30" rows="10"> 
+                                </textarea>
+                            </div>
+
+                            <input class="bg-btn-purple hover:bg-purple-900 text-white p-2 cursor-pointer" type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+               
+
+            </section>
+            
+
+        </main>
+
+        <!-- End Contact form -->
+
+
+
+
+         <!-- Footer -->
+        <footer class="flex flex-col bg-black text-white">
+            <!-- LOGO -->
+            <div class="py-10 self-center">
+                <img class="w-28" src="assets/img/logo.jpeg" alt="Logo Becka Purple">
+            </div>
+
+            <!-- Navegation bar -->
+            <nav class="self-center">
+                <!-- Links-->
+                <ul class="flex flex-col flex-1 sm:flex-row gap-2 sm:gap-5 mx-5">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Lo que hago</a></li> 
+                    <li><a href="#">Trabajos recientes</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Politica de privacidad</a></li> 
+                    <li><a href="#">Aviso legal</a></li> 
+                </ul>
+            </nav>  
+            <!-- End Navegation bar -->
+
+            <section class="flex flex-row justify-between mx-10 md:mx-24 mt-7 py-6 border-t-2 text-xs
+            gap-1">
+                <h4>&copy; Becka Purple. Todos los derechos reservados</h4>
+                <div class="flex flex-row gap-3">
+                    <img class="w-4" src="assets/iconos/instagram.svg" alt="Icono de instagram">
+                    <img class="w-4" src="assets/iconos/facebook.svg" alt="Icono de Facebook">
+                </div>      
+            </section>
+        
+        </footer>
+    </div>
+
+
+</body>
+</html>
