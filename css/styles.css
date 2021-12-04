@@ -32671,6 +32671,11 @@ h2{
   background-color: #E25FEB;
 }
 
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-left{
+  background-image: none;
+};
+
 @media (min-width: 640px){
   .sm\:container{
     width : 100%;
@@ -192605,3 +192610,5 @@ h2{
     transition-timing-function : cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
+    

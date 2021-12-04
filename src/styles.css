@@ -30,8 +30,14 @@
     .bg-font-main{
         color:#ECD7F4;
     }
-
     .bg-logo{
         background-color: #E25FEB;
     }
 }
+
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-left{
+    background-image: none;
+};
+
+    
