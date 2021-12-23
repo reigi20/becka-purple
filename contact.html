@@ -51,7 +51,7 @@
         <!-- Contact form -->
         <main>
             <section class="flex flex-row flex-wrap sm:flex-nowrap text-white items-center">
-                <div class="flex-grow sm:flex-grow-0">
+                <div class="flex-grow sm:flex-grow-0 md:flex-grow">
                     <img class="w-2/5 sm:w-full mx-auto" src="assets/img/vestido-sinbg.png" alt="Imagen del formulario contacto">
                 </div>
                 
@@ -59,15 +59,15 @@
 
                     <div class="p-5">
                         <h1 class="bg-font-main text-center text-5xl mb-10">Contáctame</h1>
-                        <form action="" method="post">
+                        <form action="contact.php" method="post">
                             <div class="mb-4">
                                 <label class="block" for="username">Nombre</label>
-                                <input class="shadow appearance-none border rounded w-full py-2 px-3  bg-transparent leading-tight focus:outline-none focus:shadow-outline" type="text" required>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3  bg-transparent leading-tight focus:outline-none focus:shadow-outline" type="text" name="username" required>
                             </div>
 
                             <div class="mb-4">
                                 <label class="block" for="email">Correo Electrónico</label>
-                                <input class="shadow appearance-none border rounded w-full py-2 px-3 bg-transparent leading-tight focus:outline-none focus:shadow-outline" type="email" required>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 bg-transparent leading-tight focus:outline-none focus:shadow-outline" type="email" name="email" required>
                             </div>
 
                             <div class="mb-4">
